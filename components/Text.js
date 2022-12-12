@@ -5,7 +5,9 @@ import { Colors } from "../Constants";
 const Text = (props) => {
   let color = Colors.black;
   if (props.red) color = Colors.red;
+  else if (props.green) color = Colors.green;
   else if (props.white) color = Colors.white;
+  else if (props.bgyellow) color = Colors.bgyellow;
 
   const styles = StyleSheet.create({
     text: {
@@ -16,7 +18,10 @@ const Text = (props) => {
     },
   });
   return (
-    <RN_Text style={{ ...styles.text, ...props.style }}>
+    <RN_Text
+      style={{ ...styles.text, ...props.style }}
+      adjustsFontSizeToFit={props.adjustsFontSizeToFit}
+    >
       {props.children}
     </RN_Text>
   );

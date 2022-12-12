@@ -27,6 +27,7 @@ const Button = (props) => {
   return (
     <TouchableOpacity
       onPress={props.onPress}
+      disabled={props.disabled}
       style={{ ...styles.button, ...props.style }}
     >
       <ImageBackground
