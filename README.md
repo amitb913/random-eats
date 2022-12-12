@@ -1,5 +1,7 @@
 # Random Eats (Frontend) CS 546
 
+This is the frontend repo for Random Eats. Access the backend repo [here](https://github.com/amitb913/random-eats-backend).
+
 # Required Dependencies
 - Node.js
 - Expo CLI (https://docs.expo.dev/get-started/installation/)
